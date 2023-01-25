@@ -5,6 +5,7 @@ public class Program
     static void Main(string[] args)
     {
         while (true) {
+            Console.WriteLine("Please check Unit Test proj.");
             Console.WriteLine("Enter string to check whether or not characters in the string have matching brackets '{}'.");
             string input = Console.ReadLine();
             bool isBracketMatched = BracketMatchChecker.Check(input);

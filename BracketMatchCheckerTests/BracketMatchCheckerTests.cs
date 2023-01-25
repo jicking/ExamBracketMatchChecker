@@ -3,8 +3,10 @@ public class BracketMatchCheckerTests
 {
     [Theory]
     [InlineData("{}", true)]
-    [InlineData("", true)]
+    [InlineData("{}{}", true)]
+    [InlineData("{{}}", true)]
     [InlineData("{abc..xyz}", true)]
+    [InlineData("", true)]
     [InlineData("}{", false)]
     [InlineData("{{}", false)]
     public void TestCheck(string input, bool isExpectedMatched)

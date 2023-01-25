@@ -6,9 +6,8 @@ public class BracketMatchChecker
     public static bool Check(string input)
     {
         const char OPEN_CHAR = '{';
-        const char CLOSING_CHAR = '}';
 
-        // sanitize input
+        // sanitize input, only keeps brackets
         input = Regex.Replace(input, "[^{}]", String.Empty);
 
         var stack = new Stack<char>();
@@ -17,12 +16,13 @@ public class BracketMatchChecker
             if (c is OPEN_CHAR)
             {
                 stack.Push(c);
+                continue;
             }
-            else if (c is CLOSING_CHAR)
-            {
-                if (stack.Count == 0) return false;
-                else stack.Pop();
-            }
+
+            // now assumes current c is closing char
+            if (stack.Count == 0) return false;
+
+            stack.Pop();
         }
 
         return (stack.Count == 0);
