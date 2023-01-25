@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketMatchChecker", "BracketMatchChecker\BracketMatchChecker.csproj", "{5E67D359-E182-4D89-B837-FBFDF64F1304}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketMatchChecker", "BracketMatchChecker\BracketMatchChecker.csproj", "{5E67D359-E182-4D89-B837-FBFDF64F1304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketMatchCheckerTests", "BracketMatchCheckerTests\BracketMatchCheckerTests.csproj", "{BC32886B-73FC-48A5-AEA3-08309FC2A9AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketMatchCheckerTests", "BracketMatchCheckerTests\BracketMatchCheckerTests.csproj", "{BC32886B-73FC-48A5-AEA3-08309FC2A9AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DCEDCA4-71A5-45A2-BB0D-47E79565B131}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
